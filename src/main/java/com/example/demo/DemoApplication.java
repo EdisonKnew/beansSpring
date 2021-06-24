@@ -14,7 +14,7 @@ public class DemoApplication {
 		new ClassPathXmlApplicationContext("spring-beans.xml");
 
 	    FoodPantry foodPantry = (FoodPantry) context.getBean("pantry");
-		System.out.println(foodPantry.getName());
+		System.out.println(foodPantry);
 
 	}
 

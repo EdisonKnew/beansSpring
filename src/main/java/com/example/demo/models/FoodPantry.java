@@ -42,5 +42,11 @@ public class FoodPantry {
         this.nbProducts = nbProducts;
     }
 
+
+    @Override
+    public String toString(){
+        return "FoodPantry :" + getName() + " Nb products: " + getNbProducts() +  " weight:" + getWeight();
+    }
+
     
 }
