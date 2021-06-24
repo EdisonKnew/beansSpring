@@ -56,7 +56,7 @@
         <constructor-arg value="superclient@panda.com" type="java.lang.String"/>
     </bean>
 
-    <bean id="client" class="com.example.demo.models.Client">
+    <bean id="client" class="com.example.demo.models.Client" autowire="byName">
         <constructor-arg value="action" type="java.lang.String"/>
         <constructor-arg value="7" type="int"/>
 
