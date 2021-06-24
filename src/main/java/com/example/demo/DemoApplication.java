@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.models.Company;
 import com.example.demo.models.FoodPantry;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,8 +14,9 @@ public class DemoApplication {
 		ApplicationContext context =
 		new ClassPathXmlApplicationContext("spring-beans.xml");
 
-	    FoodPantry foodPantry = (FoodPantry) context.getBean("pantry");
-		System.out.println(foodPantry);
+		Company company = (Company) context.getBean("company");
+
+		System.out.println(company);
 
 	}
 

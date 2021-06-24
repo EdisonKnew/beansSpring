@@ -11,4 +11,20 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 
         <constructor-arg value="45.13" type="float"/>
     </bean>
+
+    <bean id="dev" class="com.example.demo.models.Developer">
+        <property name="name" value="Paul"></property>
+        <property name="yearXp" value="5"></property>
+    </bean>
+    <bean id="cp" class="com.example.demo.models.Developer">
+        <property name="name" value="Romain"></property>
+        <property name="yearXp" value="20"></property>
+    </bean>
+
+    <bean id="company" class="com.example.demo.models.Company">
+        <property name="name" value="Rotor company"></property>
+        <property name="cp" ref="cp"></property>
+        <property name="dev" ref="dev"></property>
+    </bean>
+
 </beans>
