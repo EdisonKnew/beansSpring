@@ -2,6 +2,7 @@ package com.example.demo;
 
 import com.example.demo.models.Company;
 import com.example.demo.models.FoodPantry;
+import com.example.demo.services.Service;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -14,9 +15,12 @@ public class DemoApplication {
 		ApplicationContext context =
 		new ClassPathXmlApplicationContext("spring-beans.xml");
 
-		Company company = (Company) context.getBean("company");
+		Service service = (Service) context.getBean("service");
 
-		System.out.println(company);
+		service.setMessage("Super message");
+		System.out.println(service);
+		service = (Service) context.getBean("service");
+		System.out.println(service);
 
 	}
 

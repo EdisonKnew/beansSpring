@@ -27,4 +27,8 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
         <property name="dev" ref="dev"></property>
     </bean>
 
+    <bean id="service" class="com.example.demo.services.Service">
+        <property name="message" value="Test message"></property>
+    </bean>
+
 </beans>
