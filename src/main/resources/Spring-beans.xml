@@ -38,4 +38,11 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="customer" class="com.example.demo.models.Customer" autowire="byName">
         <property name="nom" value="Agence de Formation"/>
     </bean>
+
+    <bean id="kungfu" class="com.example.demo.models.Kungfu">
+        <property name="name" value="Super kungfu"/>
+    </bean>
+
+    <bean id="panda" class="com.example.demo.models.Panda" autowire="byName">
+    </bean>
 </beans>
