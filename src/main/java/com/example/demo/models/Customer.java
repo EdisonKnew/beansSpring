@@ -4,6 +4,11 @@ public class Customer {
     private String nom;
     private Address adresse;
 
+    public Customer(String nom, Address adresse) {
+        this.nom = nom;
+        this.adresse = adresse;
+    }
+
     public Customer(){
         
     }
