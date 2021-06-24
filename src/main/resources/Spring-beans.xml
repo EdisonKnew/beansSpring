@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.springframework.org/schema/beans"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- A définir -->
+    <bean id="pantry" class="com.example.demo.models.FoodPantry">
+        <constructor-arg value="Super pantry" type="java.lang.String"/>
+        <constructor-arg value="30" type="int"/>
+        <constructor-arg value="30.0" type="float"/>
+    </bean>
+</beans>
