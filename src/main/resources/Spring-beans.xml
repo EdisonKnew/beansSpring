@@ -31,4 +31,11 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
         <property name="message" value="Test message" ></property>
     </bean>
 
+    <bean id="adresse" class="com.example.demo.models.Address" scope="prototype">
+        <property name="adresse" value="Rue du lavoir" ></property>
+    </bean>
+
+    <bean id="customer" class="com.example.demo.models.Customer" autowire="byName">
+        <property name="nom" value="Agence de Formation"/>
+    </bean>
 </beans>

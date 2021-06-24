@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.models.Company;
+import com.example.demo.models.Customer;
 import com.example.demo.models.FoodPantry;
 import com.example.demo.services.Service;
 
@@ -15,12 +16,9 @@ public class DemoApplication {
 		ApplicationContext context =
 		new ClassPathXmlApplicationContext("spring-beans.xml");
 
-		Service service = (Service) context.getBean("service");
+		Customer customer = (Customer) context.getBean("customer");
 
-		service.setMessage("Super message");
-		System.out.println(service);
-		service = (Service) context.getBean("service");
-		System.out.println(service);
+		System.out.println(customer);
 
 	}
 
